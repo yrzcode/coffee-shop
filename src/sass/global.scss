@@ -10,6 +10,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   transition: all 0.3s ease;
 }
 
@@ -20,7 +22,7 @@ body {
 }
 
 .App-header {
-  padding: 2rem 0;
+  padding: $spacing-xl 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,19 +45,19 @@ body {
   margin-top: 2rem;
 }
 
-h1 {
+.App-header-title {
+  color: $text-primary;
   font-weight: 700;
   font-size: $font-size-xxl;
-  margin-bottom: $spacing-xs;
+  margin: $spacing-lg 0 $spacing-xs;
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
-  color: white;
 }
 
-p {
+.App-header-description {
+  color: $text-secondary;
   font-weight: 400;
   font-size: $font-size-lg;
   margin-top: $spacing-xs;
   letter-spacing: 0.1em;
-  color: white;
 }

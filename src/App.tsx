@@ -6,8 +6,8 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <SubTitle />
-        <h1>Trackカフェ</h1>
-        <p>オライン注文システム</p>
+        <h1 className="App-header-title">Trackカフェ</h1>
+        <p className="App-header-description">オライン注文システム</p>
       </header>
       <main className="App-main">
         <div className="drink-list">
