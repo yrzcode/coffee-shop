@@ -11,8 +11,12 @@ const Checkout = ({ itemCount, totalAmount }: CheckoutProps) => {
       <h2 className={styles.title}>お会計</h2>
       <hr className={styles.divider} />
       <div className={styles.detail}>
-        <p className={styles.itemCount}>商品数：{itemCount} 個</p>
-        <p className={styles.totalAmount}>合計金額：{totalAmount} 円</p>
+        <span id="count" className={styles.itemCount}>
+          商品数：{itemCount} 個
+        </span>
+        <span id="price" className={styles.totalAmount}>
+          合計金額：{totalAmount} 円
+        </span>
       </div>
     </div>
   );
