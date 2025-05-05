@@ -5,6 +5,7 @@ import Checkout from "./components/Checkout";
 import Title from "./components/Title";
 import type { CartState } from "./types/cart";
 import { useState } from "react";
+import DrinkItemList from "./components/DrinkList";
 
 const App = () => {
   const [cart, setCart] = useState<CartState>(
@@ -40,21 +41,8 @@ const App = () => {
         <Title />
       </header>
       <main className="App-main">
-        <div className="App-content">
-          <div className="drink-list">
-            {drinks.map((drink) => (
-              <DrinkItem
-                key={drink.id}
-                id={drink.id}
-                name={drink.name}
-                price={drink.price}
-                quantity={cart[drink.id].quantity}
-                onAddToCart={() => handleAddToCart(drink.id)}
-              />
-            ))}
-          </div>
-          <Checkout itemCount={totalQuantity} totalAmount={totalPrice} />
-        </div>
+        <DrinkItemList cart={cart} handleAddToCart={handleAddToCart} />
+        <Checkout itemCount={totalQuantity} totalAmount={totalPrice} />
       </main>
     </div>
   );

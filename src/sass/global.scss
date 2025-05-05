@@ -35,20 +35,9 @@ body {
   padding: $spacing-xs 0;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.App-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
-}
-
-.drink-list {
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
 }
