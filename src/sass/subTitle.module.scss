@@ -1,0 +1,15 @@
+@import "variables";
+
+.subtitle {
+  font-weight: 500;
+  font-size: $font-size-lg;
+  margin-top: $spacing-xl;
+  letter-spacing: 0.08em;
+  color: $text-light;
+  background-color: $background-dark;
+  margin: 0 $spacing-lg;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius-xl;
+  box-shadow: $box-shadow-default;
+  border: 2px solid $background-light;
+}
