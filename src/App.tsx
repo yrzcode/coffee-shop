@@ -8,6 +8,7 @@ import { useState } from "react";
 import DrinkItemList from "./components/DrinkList";
 
 const App = () => {
+  // カートの状態を管理
   const [cart, setCart] = useState<CartState>(
     drinks.reduce((acc, drink) => {
       acc[drink.id] = { quantity: 0 };
@@ -15,17 +16,20 @@ const App = () => {
     }, {} as CartState)
   );
 
+  // カート内の商品数を計算
   const totalQuantity = Object.values(cart).reduce(
     (acc, drink) => acc + drink.quantity,
     0
   );
 
+  // カート内の合計金額を計算
   const totalPrice = Object.entries(cart).reduce(
     (acc, [id, { quantity }]) =>
       acc + quantity * (drinks.find((d) => d.id === id)?.price ?? 0),
     0
   );
 
+  // カートに商品を追加
   const handleAddToCart = (id: string) => {
     setCart((prev) => {
       const newCart = { ...prev };
