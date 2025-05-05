@@ -32,7 +32,7 @@ body {
 }
 
 .App-main {
-  padding: 2rem;
+  padding: $spacing-xs 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -51,21 +51,4 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-}
-
-.App-header-title {
-  color: $text-primary;
-  font-weight: 700;
-  font-size: $font-size-xxl;
-  margin: $spacing-lg 0 $spacing-xs;
-  letter-spacing: 0.05em;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
-}
-
-.App-header-description {
-  color: $text-secondary;
-  font-weight: 400;
-  font-size: $font-size-lg;
-  margin-top: $spacing-xs;
-  letter-spacing: 0.1em;
 }

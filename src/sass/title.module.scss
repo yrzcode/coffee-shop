@@ -1,0 +1,31 @@
+@import "variables";
+
+.title {
+  color: $text-primary;
+  font-weight: 700;
+  font-size: $font-size-xxl;
+  margin: $spacing-lg 0 $spacing-xs;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+.description {
+  color: $text-secondary;
+  font-weight: 400;
+  font-size: $font-size-lg;
+  margin-top: $spacing-xs;
+  letter-spacing: 0.1em;
+}
+
+.emoji {
+  font-size: $font-size-lg;
+  margin-left: $spacing-xs;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  width: 80%;
+  background-color: $text-light;
+  margin: $spacing-md 0;
+}
