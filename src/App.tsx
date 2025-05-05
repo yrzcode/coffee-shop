@@ -21,11 +21,11 @@ const App = () => {
 
   const totalPrice = Object.entries(cart).reduce(
     (acc, [id, { quantity }]) =>
-      acc + quantity * (drinks.find((d) => d.id === Number(id))?.price ?? 0),
+      acc + quantity * (drinks.find((d) => d.id === id)?.price ?? 0),
     0
   );
 
-  const handleAddToCart = (id: number) => {
+  const handleAddToCart = (id: string) => {
     setCart((prev) => {
       const newCart = { ...prev };
       newCart[id].quantity += 1;
@@ -45,6 +45,7 @@ const App = () => {
             {drinks.map((drink) => (
               <DrinkItem
                 key={drink.id}
+                id={drink.id}
                 name={drink.name}
                 price={drink.price}
                 quantity={cart[drink.id].quantity}

@@ -1,26 +1,26 @@
 const drinks = [
 	{
-		id: 1,
+		id: "coffee",
 		name: "コーヒー",
 		price: 480,
 	},
 	{
-		id: 2,
+		id: "tea",
 		name: "紅茶",
 		price: 280,
 	},
 	{
-		id: 3,
+		id: "milk",
 		name: "ミルク",
 		price: 180,
 	},
 	{
-		id: 4,
+		id: "coke",
 		name: "コーラ",
 		price: 190,
 	},
 	{
-		id: 5,
+		id: "beer",
 		name: "ビール",
 		price: 580,
 	},
