@@ -25,7 +25,9 @@ const DrinkItem = ({
       <span className={styles.name}>{name}</span>
       <span className={styles.price}>{price} 円</span>
       {quantity !== undefined && (
-        <span className={styles.notification}>{quantity}</span>
+        <div id={`${id}-count`} className={styles.quantity}>
+          {quantity}
+        </div>
       )}
     </button>
   );
